@@ -36,7 +36,6 @@ alias mkdir='mkdir -pv'
 alias opng=optipng
 
 
-
 alias p=pacman
 alias sp='sudo pacman'
 
