@@ -45,7 +45,7 @@ alias py=python
 
 alias v=vim
 alias vi=vim
-alias svi='sudo vim'
+alias sv='sudo vim'
 
 
 alias s=sudo
