@@ -23,16 +23,18 @@ alias j='jobs -l'
 alias jpgo=jpegoptim
 
 
+alias l='ls --color=auto'
+alias l.='ls -d .* --color=auto'
+alias ll='ls -la'
+alias ls='ls --color=auto'
+
+
 alias m='mkdir -pv'
 alias mkdir='mkdir -pv'
 
 
 alias opng=optipng
 
-
-alias l.='ls -d .* --color=auto'
-alias ll='ls -la'
-alias ls='ls --color=auto'
 
 
 alias p=pacman
