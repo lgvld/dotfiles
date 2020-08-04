@@ -8,6 +8,9 @@ setopt appendhistory
 autoload -Uz compinit && compinit
 
 
+setopt autocd
+
+
 autoload -U promptinit; promptinit
 prompt spaceship
 
