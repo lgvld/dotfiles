@@ -1,8 +1,28 @@
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+
+setopt appendhistory
+
+
+autoload -Uz compinit && compinit
+
+
+autoload -U promptinit; promptinit
+prompt spaceship
+
+
+setopt HIST_IGNORE_SPACE
+
+
+
 # check: https://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html
 
 alias cd..='cd ..'
 alias ..='cd ..'
 alias ...='cd ../../../'
+
+alias cp='cp --reflink=auto'
 
 
 alias g=git
@@ -20,6 +40,8 @@ alias h='history'
 
 alias j='jobs -l'
 
+alias jn='jupyter notebook --NotebookApp.iopub_data_rate_limit=1.0e10'
+
 alias jpgo=jpegoptim
 
 
@@ -34,6 +56,8 @@ alias mkdir='mkdir -pv'
 
 
 alias opng=optipng
+
+alias optimg='jpegoptim *.jpg ; jpegoptim *.JPG ; optipng *.png ; optipng *.PNG'
 
 
 alias p=pacman
@@ -55,10 +79,29 @@ alias wget='wget -c'
 
 alias y=yay
 
+alias ydl=youtube-dl
+
 
 
 function gcap() {
     git add .
-    git commit -a -m "lazy commit (louis)"
+    git commit -a -m 'lazy commit'
     git push
 }
+
+function mrun() {
+    # simple script to run matlab scripts
+    if [ $# -eq 0 ]
+      then
+        echo "please pass matlab script"
+    fi
+    matlab -nodisplay -nosplash -nodesktop -r "run('$1');exit;" | tail -n +14
+}
+
+
+
+# gsettings set org.gnome.desktop.background picture-uri file:///home/louis/.louis/bg.jpg
+
+
+
+source ~/.louis/mpw/mpw.sh
