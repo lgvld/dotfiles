@@ -74,7 +74,8 @@ alias vi=vim
 alias sv='sudo vim'
 
 
-alias s=sudo
+alias s='sudo '
+alias sudo='sudo '
 
 
 alias wget='wget -c'
