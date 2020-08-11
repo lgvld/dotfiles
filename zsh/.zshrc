@@ -19,6 +19,16 @@ setopt HIST_IGNORE_SPACE
 
 
 
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+  eval `ssh-agent -s`
+  ssh-add
+fi
+
+
+export VISUAL=vim
+
+
+
 # check: https://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html
 
 alias cd..='cd ..'
@@ -89,7 +99,12 @@ alias ydl=youtube-dl
 
 function gcap() {
     git add .
-    git commit -a -m 'lazy commit'
+    if [ -z "$1"]
+    then
+        git commit -a -m 'lazy commit'
+    else
+        git commit -a -m "$*"
+    fi
     git push
 }
 
@@ -104,7 +119,7 @@ function mrun() {
 
 
 
-# gsettings set org.gnome.desktop.background picture-uri file:///home/louis/.louis/bg.jpg
+#gsettings set org.gnome.desktop.background picture-uri file:///home/louis/.louis/bg.jpg
 
 
 
