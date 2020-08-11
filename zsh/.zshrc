@@ -95,7 +95,7 @@ alias ydl=youtube-dl
 
 
 
-function gcap() {
+function gacp() {
     git add .
     if [ -z "$1"]
     then
