@@ -119,7 +119,7 @@ function mrun() {
 
 
 
-#gsettings set org.gnome.desktop.background picture-uri file:///home/louis/.louis/bg.jpg
+gsettings set org.gnome.desktop.background picture-uri file:///home/louis/.louis/bg.jpg
 
 
 
