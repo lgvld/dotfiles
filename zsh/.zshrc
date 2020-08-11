@@ -19,17 +19,15 @@ setopt HIST_IGNORE_SPACE
 
 
 
-if [ -z "$SSH_AUTH_SOCK" ] ; then
-  eval `ssh-agent -s`
-  ssh-add
-fi
+# if [ -z "$SSH_AUTH_SOCK" ] ; then
+#   eval `ssh-agent -s`
+#   ssh-add
+# fi
 
 
 export VISUAL=vim
 
 
-
-# check: https://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html
 
 alias cd..='cd ..'
 alias ..='cd ..'
