@@ -36,6 +36,12 @@ alias ...='cd ../../../'
 alias cp='cp --reflink=auto'
 
 
+alias d='docker'
+alias dk='docker kill'
+alias dkk='docker kill $(docker ps -q)'
+alias dps='docker ps'
+
+
 alias g=git
 alias ga='git add'
 alias gc='git commit'
