@@ -1,6 +1,6 @@
 {
 	"color_scheme": "Packages/1337 Color Scheme/1337.tmTheme",
-	"ensure_newline_at_eof_on_save": false,
+	"ensure_newline_at_eof_on_save": true,
 	"font_size": 12,
 	"ignored_packages":
 	[

@@ -13,6 +13,7 @@ setopt autocd
 
 autoload -U promptinit; promptinit
 prompt spaceship
+SPACESHIP_PROMPT_ADD_NEWLINE=false
 
 
 setopt HIST_IGNORE_SPACE
@@ -103,7 +104,7 @@ alias ydl=youtube-dl
 
 function gacp() {
     git add .
-    if [ -z "$1"]
+    if [ -z "$1" ]
     then
         git commit -a -m 'lazy commit'
     else
