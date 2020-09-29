@@ -34,7 +34,7 @@ alias cd..='cd ..'
 alias ..='cd ..'
 alias ...='cd ../../../'
 
-alias cp='cp --reflink=auto'
+alias cp='cp --interactive --reflink=auto'
 
 
 alias d='docker'
@@ -71,6 +71,8 @@ alias ls='ls --color=auto'
 
 alias m='mkdir -pv'
 alias mkdir='mkdir -pv'
+
+alias mv='mv --interactive'
 
 
 alias opng=optipng
