@@ -12,6 +12,7 @@ setopt autocd
 
 
 autoload -U promptinit; promptinit
+# prompt adam1
 prompt spaceship
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 
