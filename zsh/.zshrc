@@ -26,13 +26,16 @@ setopt HIST_IGNORE_SPACE
 # fi
 
 
+export EDITOR=vim
 export VISUAL=vim
+
+bindkey -e
 
 
 
 alias cd..='cd ..'
 alias ..='cd ..'
-alias ...='cd ../../../'
+alias ...='cd ../..'
 
 alias cp='cp --interactive --reflink=auto'
 
