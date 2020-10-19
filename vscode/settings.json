@@ -1,0 +1,16 @@
+{
+    "telemetry.enableTelemetry": false,
+    "python.insidersChannel": "weekly",
+    "window.zoomLevel": 0,
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "files.insertFinalNewline": true,
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "editor.fontSize": 16,
+    "update.mode": "none"
+}

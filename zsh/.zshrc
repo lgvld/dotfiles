@@ -90,7 +90,7 @@ alias sp='sudo pacman'
 alias py=python
 
 
-alias v=vim
+# alias v=vim
 alias vi=vim
 alias sv='sudo vim'
 
