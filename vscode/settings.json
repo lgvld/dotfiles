@@ -1,6 +1,6 @@
 {
     "telemetry.enableTelemetry": false,
-    "python.insidersChannel": "weekly",
+    "python.insidersChannel": "off",
     "window.zoomLevel": 0,
     "files.autoSave": "onFocusChange",
     "files.trimTrailingWhitespace": true,
@@ -10,7 +10,10 @@
     "editor.formatOnPaste": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "workbench.colorTheme": "Material Theme Darker",
     "editor.fontSize": 16,
-    "update.mode": "none"
+    "update.mode": "none",
+    "python.defaultInterpreterPath": "/usr/bin/python",
+    "workbench.colorCustomizations": {},
+    "workbench.statusBar.visible": true
 }
