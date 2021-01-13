@@ -20,6 +20,12 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 setopt HIST_IGNORE_SPACE
 
 
+# autoload -Uz bracketed-paste-magic
+# zle -N bracketed-paste bracketed-paste-magic
+
+# autoload -Uz url-quote-magic
+# zle -N self-insert url-quote-magic
+
 
 if [ -z "$SSH_AUTH_SOCK" ] ; then
   eval `ssh-agent -s`
@@ -104,7 +110,7 @@ alias wget='wget -c'
 
 alias y=yay
 
-alias ydl=youtube-dl
+alias ydl='noglob youtube-dl'
 
 
 
