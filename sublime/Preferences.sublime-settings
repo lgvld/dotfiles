@@ -1,7 +1,7 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
 	"ensure_newline_at_eof_on_save": true,
-	"font_size": 11,
+	"font_size": 12,
 	"ignored_packages":
 	[
 		"Vintage"
