@@ -12,9 +12,9 @@ setopt autocd
 
 
 autoload -U promptinit; promptinit
-# prompt adam1
-prompt spaceship
-SPACESHIP_PROMPT_ADD_NEWLINE=false
+prompt adam1
+# prompt spaceship
+# SPACESHIP_PROMPT_ADD_NEWLINE=false
 
 
 setopt HIST_IGNORE_SPACE
@@ -68,7 +68,7 @@ alias h='history'
 
 alias j='jobs -l'
 
-alias jn='jupyter notebook --NotebookApp.iopub_data_rate_limit=1.0e10'
+# alias jn='jupyter notebook --NotebookApp.iopub_data_rate_limit=1.0e10'
 
 alias jpgo=jpegoptim
 
@@ -105,6 +105,10 @@ alias s='sudo '
 alias sudo='sudo '
 
 
+alias t=tmux
+alias ta='tmux a'
+
+
 alias wget='wget -c'
 
 
@@ -125,20 +129,3 @@ function gacp() {
     git push
 }
 
-function mrun() {
-    # simple script to run matlab scripts
-    if [ $# -eq 0 ]
-      then
-        echo "please pass matlab script"
-    fi
-    matlab -nodisplay -nosplash -nodesktop -r "run('$1');exit;" | tail -n +14
-}
-
-
-
-# gsettings set org.gnome.desktop.background picture-uri file:///home/louis/.louis/bg_0.jpg
-gsettings set org.gnome.desktop.background picture-uri file:///home/louis/.louis/bg_1.jpg
-
-
-
-source ~/.louis/mpw/mpw.sh
