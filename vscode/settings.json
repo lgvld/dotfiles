@@ -10,10 +10,23 @@
     "editor.formatOnPaste": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
-    "workbench.colorTheme": "Material Theme Darker",
     "editor.fontSize": 16,
     "update.mode": "none",
-    "python.defaultInterpreterPath": "/usr/bin/python",
-    "workbench.colorCustomizations": {},
-    "workbench.statusBar.visible": true
+    "python.defaultInterpreterPath": "/opt/anaconda/bin/python",
+    "workbench.colorCustomizations": {
+        "[Material Theme Darker]": {}
+    },
+    "workbench.statusBar.visible": true,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter-notebook",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "jupyter.insidersChannel": "weekly",
+    "terminal.integrated.inheritEnv": false,
+    "workbench.colorTheme": "Default Light+",
+    "jupyter.askForKernelRestart": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
