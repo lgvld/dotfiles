@@ -12,7 +12,7 @@
     "editor.snippetSuggestions": "top",
     "editor.fontSize": 16,
     "update.mode": "none",
-    "python.defaultInterpreterPath": "/opt/anaconda/bin/python",
+    "python.defaultInterpreterPath": "/bin/python",
     "workbench.colorCustomizations": {
         "[Material Theme Darker]": {}
     },
@@ -28,5 +28,13 @@
     "workbench.colorTheme": "Default Light+",
     "jupyter.askForKernelRestart": false,
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.formatting.provider": "black",
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true
 }

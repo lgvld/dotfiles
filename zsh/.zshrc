@@ -96,13 +96,17 @@ alias sp='sudo pacman'
 alias py=python
 
 
-# alias v=vim
+alias v=vim
 alias vi=vim
 alias sv='sudo vim'
 
 
 alias s='sudo '
 alias sudo='sudo '
+
+
+alias t=tmux
+alias ta='tmux a'
 
 
 alias wget='wget -c'
@@ -136,8 +140,8 @@ function mrun() {
 
 
 
-# gsettings set org.gnome.desktop.background picture-uri file:///home/louis/.louis/bg_0.jpg
-gsettings set org.gnome.desktop.background picture-uri file:///home/louis/.louis/bg_1.jpg
+gsettings set org.gnome.desktop.background picture-uri file:///home/louis/.louis/bg_0.jpg
+#gsettings set org.gnome.desktop.background picture-uri file:///home/louis/.louis/bg_1.jpg
 
 
 
